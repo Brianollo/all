@@ -1,0 +1,21 @@
+div.one{
+    display:grid;
+    grid-template-columns: 'myarea myarea ';
+    background-color: antiquewhite;
+    grid-gap:20px;
+    padding: 10px;
+
+}
+.one > div{
+    background-color: aquamarine;
+    padding: 10px 0;
+    text-align: center;
+    border-style: solid;
+    height:100px;
+}
+body{
+    margin: 0;
+}
+.item{
+    grid-area: myarea;
+}

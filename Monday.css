@@ -1,0 +1,57 @@
+body{
+    margin:0;
+    
+}
+div.one{
+    padding-top: 9px;
+    padding-bottom: 8px;
+    background-color: rgb(241, 196, 140);
+    overflow: hidden;
+    transition: background-color 2s;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 5%;
+    box-shadow: 10px 0px 10px gainsboro;
+}
+div.one:hover{
+    background-color: rgb(250, 173, 78);
+}
+nav.one{
+    float: right;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+a{
+    color: rgb(107, 102, 102);
+    padding-right: 5px;
+    transition: padding 1s;
+    text-align: center;
+}
+a:link{
+    text-decoration: none;
+    padding: 8px;
+    padding-right: 12px;
+    font-size: 19px;
+}
+a:hover:not(.only){
+    color:white;
+    background-color: green;
+    border-radius: 5px;
+    padding-right:20px;
+    padding-left: 15px;
+    visibility: visible;
+}
+nav.two{
+    font-size: 20px;
+    padding-left: 6px;
+}
+*{
+    box-sizing: border-box;
+}
+div.two{
+    height:1000px;
+    background-color: aquamarine;
+    
+}
