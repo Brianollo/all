@@ -1,0 +1,180 @@
+<html>
+    <head>
+        <title>Tries</title>
+        <link rel="stylesheet" href="index.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device, initial-scale=0.89">
+        <script src="https://kit.fontawesome.com/f47b0bb444.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+    box-sizing:border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-image: linear-gradient(to left,rgb(83, 76, 76),rgb(122, 112, 112));
+    backdrop-filter:blur(50px);
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:95vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width:350px;
+    height:90%;
+    margin-left: -20px;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    box-shadow: 2px 3px 9px 7px white;
+}
+.top-header{
+    display: flex;
+    width:50%;
+    justify-content: center;
+    border-radius: 20px;
+    }
+h2{
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255);
+    font-size: 40px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:85%;
+}
+input{
+    padding-left:40px ;
+    height: 45px;
+    border:none;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0px 5px 7px;
+    background-image:linear-gradient(to left,rgb(238, 238, 238),rgb(185, 245, 255));
+}
+input:hover{
+    box-shadow: 0px 2px 4px white;
+}
+span{
+    font-size: 18px;
+    color: #fff;
+}
+.Fname{
+    padding-bottom: 3px;
+}
+.lname{
+    padding: 10px;
+}
+.email{
+    padding: 10px;
+}
+.create{
+    margin-top: 19px;
+    margin-bottom: 12px;
+}
+button{
+    width:130px;
+    padding: 10px;
+    border-radius: 20px;
+    border:none;
+    outline: none;
+    color:black;
+    font-size: 20px;
+    transition: width 1s ease-in;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 3px white;
+}
+button:hover{
+    width:220px;
+    background-image:linear-gradient(to left,rgb(238, 238, 238),rgb(185, 245, 255));
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.middle{
+    display: block;
+}
+#me{
+    color: white;
+}
+.check{
+    position: relative;
+    top:16px;
+    border: 1px solid white;
+    box-shadow:0px 0px 0px;
+}
+.check:hover{
+    box-shadow: none;
+    outline: invert;
+}
+div.hr {
+    position: relative;
+    color: white;
+    width:300px;
+    top:-15px;
+}
+div.down{
+    position: relative;
+    color: white;
+    width: 300px;
+    top:10px;
+}
+hr{
+    box-shadow: 0px 1px 4px;
+}
+    </style>
+    </head>
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="top-header">
+                <h2>Sign up</h2>
+            </div>
+            <div class="hr"><hr></div>
+            <div class="Fname">
+                <span>First name</span>
+            </div>
+            <div class="input-field">
+                <input type="text" class="user" maxlength="30px" required>
+            </div>
+            <div class="lname">
+                <span>last name</span>
+            </div>
+            <div class="input-field">
+                <input type="text" class="user" maxlength="30px" required>
+            </div>
+            <div class="email">
+                <span>Email</span>
+            </div>
+            <div class="input-field">
+                <input type="email" class="user" maxlength="40px" required>
+            </div>
+            <div class="create">
+                <button onclick="document.location='#'">
+                Create
+                </button>
+            </div>
+            <div class="down"><hr></div>
+            <div class="bottom">
+                <div class="middle">
+                    <input type="checkbox" class="check">
+                    <span id="me">Remmember me</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

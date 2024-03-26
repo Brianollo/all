@@ -1,0 +1,186 @@
+<html>
+<head>
+    <title>Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device, initial-scale=0.8">
+    <script src="https://kit.fontawesome.com/f47b0bb444.js" crossorigin="anonymous"></script>
+    <style>
+        div.up{
+    position: relative;
+    width:320px;
+    top:-15px;
+    left:15px;
+}
+div.down{
+    position: relative;
+    top:4px;
+    width:320px;
+    left:15px;
+}
+        *{
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    margin: 0;
+    background-image: linear-gradient(to left,rgb(83, 76, 76),rgb(122, 112, 112));
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 93vh;
+}
+.container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    border-radius: 30px;
+    box-shadow: 0px -10px 30px white;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 23px;
+    font-size: 33px;
+    color: rgb(241, 237, 231);
+    margin-bottom: 9px;
+    margin-top: 20px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.user{
+    height:50px;
+    width:85%;
+    border-radius: 20px;
+    padding-left: 36px;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    background-color: rgba(107, 255, 255,0.3);
+    box-shadow: 1px 5px 7px 2px rgb(218, 207, 207);
+}
+.user:hover{
+    box-shadow: 1px 3px 5px 2px white;
+    border: 3px solid rgb(75, 255, 216);
+}
+.user::placeholder{
+    color:white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+    text-shadow: 0px 0px 10px black;
+}
+i{
+    position: relative;
+    top:32px;
+    left:40px;
+    color:white;
+}
+.login{
+    height:40px;
+    width:50%;
+    margin-left: 79px;
+    margin-top: 20px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: aliceblue;
+    font-size: 16px;
+    cursor: hand;
+    background-color: rgba(139, 117, 117, 0.5);
+    color: white;
+    text-shadow: 0px 0px 10px wheat;
+}
+.login:hover{
+    text-shadow: 0px 1px 2px;
+    background-image: linear-gradient(to left,rgb(83, 76, 76),rgb(122, 112, 112));
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    white-space: 10px;
+    padding-top: 17px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 7px;
+    margin-top: 8px;
+}
+.right{
+    display: flex;
+    margin-left:7px;
+}
+#check{
+    width:34px;
+    box-shadow: 0px 1px 2px black;
+}
+.left{
+    display: flex;
+}
+#one{
+    color:white;
+    text-shadow: 0px 0px 10px black
+}
+a{
+    text-decoration: none;
+    font-size: 17px;
+    color:white;
+    text-shadow: 0px 0px 10px black;
+}
+a:hover{
+    color:lightseagreen;
+    text-decoration: underline;
+}
+#check{
+    box-shadow: none;
+}
+#check:hover{
+    box-shadow: none;
+}
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="container">
+        <div class="top-header">
+            <header>Sign in</header>
+        </div>
+        <div class="up"><hr></div>
+        <div class="inputs">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" class="user" placeholder="Username" required>
+        </div>
+        <div class="inputs">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" class="user" placeholder="email" required>
+        </div>
+        <div class="inputs">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" class="user" placeholder="Password" required>
+        </div>
+        <div class="inputs">
+            <input type="submit" class="Login" placeholder="Username" required>
+        </div>
+        <div class="down"><hr></div>
+        <div class="bottom">
+            <div class="left">
+                <input type="checkbox" id="check">
+                <label for="check" id="one">Remmember me</label>
+            </div>
+            <div class="right">
+                <label><a href="#">Forgot your password ?</a></label>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

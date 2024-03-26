@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/f47b0bb444.js" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device, initial-scale=0.5">
+<style>
+    @media (max-width:200px;){
+        .navbar{
+            visibility: hidden;
+        }
+    }
+*{
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(to left,rgb(212, 194, 194),rgb(151, 238, 219));
+    backdrop-filter: blur(5px);
+}
+img{
+    border-radius: 30px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20 0px;
+}
+.navbar .link{
+    display: flex;
+    list-style: none;
+    gap:35px;
+    
+}
+.navbar .link a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+}
+.navbar .link a:hover{
+    color: #19e8ff;
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+.navbar .logo h2{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+}
+.navbar .logo img{
+    width: 40px;
+    color: #fff;
+}
+.navbar .login-btn{
+    border: none;
+    outline: none;
+    background-color: rgba(168, 255, 248, 0.712);
+    color: rgb(19, 18, 18);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    padding:10px 18px;
+    cursor: pointer;
+    transition: width 2s ease-out;
+}
+.login-btn:hover{
+    width: 100px;
+    box-shadow: 1px 3px 5px 7px whitesmoke;
+}
+.logo{
+    padding: 10px 0 0 0;
+}
+header{
+    position: relative;
+    width: 100%;
+    left:0;
+    top:0;
+    padding: 0 10px;
+}
+
+.box{
+    position: fixed;
+    top:55%;
+    left:50%;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    max-width: 720px;
+    width: 100%;
+    height: 58vh;
+    border-radius: 20px;
+    transform: translate(-50%,-50%);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.container .top-header{
+    max-width: 400px;
+}
+ h2.very{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom:20px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+h2.good{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom:20px;
+    margin-top: 70px;
+    color: whitesmoke;
+    text-shadow: 0px 2px 5px;
+}
+.top-header{
+    background-image: url(gang.png);
+    background-position:center;
+    background-size:cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    justify-content: center;
+    padding-top: 30px;
+    background-color: rgba(190, 127, 25, 0.311);
+    padding-left: 10px;
+    width:50%;
+    padding-right:3px;
+}
+.top-header P{
+    text-align: center;
+    letter-spacing: 2PX;
+    font-size: 1.4rem;
+}
+p{
+    margin-top: 20px;
+    color: white;
+}
+.content{
+    background-color: rgba(0, 255, 255,0.23);
+    width:450px;
+    padding: 10px 18px 20px 30px;
+}
+.input-field{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-left:0px;
+    margin-top: 6px;
+}
+.user:hover{
+    border: 1px solid salmon;
+    box-shadow: 0px 3px 7px 4px salmon;
+}
+.user{
+height:37px;
+border: none;
+outline: none;
+border-radius: 20px;
+margin-left: 12px;
+padding-left:30px;
+box-shadow: 1px 2px 7px 2px;
+}
+.user::placeholder{
+    font-size: 16px;
+    color: black;
+    padding-left: 12px;
+}
+label{
+    display: none;
+    position: relative;
+    top:10.4px;
+    left: 10px;
+}
+button.tap{
+    height:27px;
+    width:25%;
+    padding: 3px 0 0 2px;
+    margin-top:17px;
+    margin-left: 35px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    transition: width 1s ease-in;
+    box-shadow: 1px 2px 7px 3px rgb(46, 44, 44);
+}
+button.tap:hover{
+    width:34%;
+    padding-right: 7px;
+    padding-left: 10px;
+}
+i{
+    position: relative;
+    top:11px;
+    left:38px;
+}
+.bottom{
+    margin-top:20px;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    position:relative;
+    right:0px;
+}
+a:visited{
+    text-decoration: none;
+    color: #3d3220;
+}
+a.eren:hover{
+    text-decoration:underline;
+    color:blue;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="itadori.png" alt="logo">
+                <h2>Brianollo</h2>
+            </a>
+            <ul class="link">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfoil</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+    </header>
+    <div class="box">
+        <div class="container">
+            <div class="top-header">
+                <h2 class="good">Welcome back</h2>
+                <div class="para">
+                <p>Pleae Login using your personal information to keep using our services and to use Domain expansions.</p>
+            </div>
+            </div>
+            <div class="content">
+                <h2 class="very">login</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" class="user" placeholder="Username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" class="user" placeholder="Email" required>
+                    <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" class="user" placeholder="Password" required>
+                    <label>Password</label>
+                    </div>
+                    <div class="input-field">
+                        <button class="tap">LOG IN</button>
+                    </div>
+                </form>
+                <div class="bottom">
+                    <div class="left">
+                        <a href="#"><span>Don't Have an account.</span></a>
+                    </div>
+                    <div class="right">
+                        <a href="#" class="eren">Forgot your Password ?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
